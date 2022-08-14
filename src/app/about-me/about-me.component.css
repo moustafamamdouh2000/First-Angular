@@ -1,0 +1,22 @@
+h1 {
+    padding-left: 10rem;
+    padding-top: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    width: fit-content;
+}
+
+p {
+    padding-left: 40rem
+}
+button{
+    margin-left: 40rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.6rem 4rem 0.6rem 4rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #bab0b0;
+}

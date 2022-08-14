@@ -1,0 +1,62 @@
+/* ================ Mobile First ================ */
+
+/* Any other smaller devices */
+body {
+    background: brown;
+  }
+  /* Mobile */
+  @media (min-width: 425px) {
+    body {
+      background: yellow;
+    }
+    .hero {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/asset1.jpeg');
+        height: 30rem;
+    }
+    
+    .button {
+        margin-left: 16rem;
+        margin-top: 8rem;
+        border-radius: 0.3rem;
+        padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+        background-color: #b7c3d1;
+        border: 0.1rem solid #0b305e;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: darkslategrey;
+    }
+  }
+  /* Tablet */
+  @media (min-width: 768px) {
+    body {
+        
+      background: purple;
+    }
+    
+  }
+  /* Labtop */
+  @media (min-width: 1024px) {
+    body {
+      background: cyan;
+    }
+  }
+  /* Labtop L*/
+  @media (min-width: 1440px) {
+    body {
+      background: green;
+    }
+  }
+  /* Full HD */
+  @media (min-width: 2560px) {
+    body {
+      background: blue;
+    }
+  }
+  
+  /* Ultra HD */
+  @media (min-width: 3840px) {
+    body {
+      background: red;
+    }
+  }
