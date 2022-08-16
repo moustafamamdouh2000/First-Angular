@@ -1,4 +1,7 @@
+### NOTE : *ngFOR doesn't work , i debugged the code for 2 hours , but for some reason it works find on lab 3 , this is the only issue with this lab
+
 # Lab2
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
