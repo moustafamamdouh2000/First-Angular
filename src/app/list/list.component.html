@@ -1,0 +1,25 @@
+<div>
+  <li
+    *ngFor="let todo of todoList"
+    style="
+      list-style: none;
+      padding-left: 3rem;
+      cursor: pointer;
+      width: fit-content;
+    "
+    (click)="selectEvent($event)"
+  >
+    {{ todo.Name }}
+    {{ todo.Status }}
+  </li>
+  <button
+    style="margin: 5rem 0 5rem 40rem"
+    value="Delete"
+    (click)="deleteTodo()"
+  >
+    Delete
+  </button>
+  <button style="margin: 0" value="Complete" (click)="completeTodo()">
+    Complete
+  </button>
+</div>
