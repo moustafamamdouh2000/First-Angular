@@ -1,0 +1,173 @@
+<div class="container">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm)">
+    <div class="form-group">
+      <input
+        class="form-control mt-5 mb-5"
+        type="text"
+        placeholder="enter your email"
+        formControlName="email"
+      />
+      <div
+        *ngIf="
+          registerControls['email']['touched'] &&
+          registerControls['email']['invalid']
+        "
+      >
+        <p
+          *ngIf="
+            registerControls['email']['errors'] &&
+            registerControls['email']['errors']['requried']
+          "
+          class="text-danger"
+        >
+          email is required
+        </p>
+        <p
+          *ngIf="
+            registerControls['email']['errors'] &&
+            registerControls['email']['errors']['pattern']
+          "
+        >
+          email format is not correct
+        </p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control mt-5 mb-5"
+        type="text"
+        placeholder="enter your name"
+        formControlName="name"
+      />
+      <div
+        *ngIf="
+          registerControls['name']['touched'] &&
+          registerControls['name']['invalid']
+        "
+      >
+        <p
+          *ngIf="
+            registerControls['name']['errors'] &&
+            registerControls['name']['errors']['requried']
+          "
+          class="text-danger"
+        >
+          name is required
+        </p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control mt-5 mb-5"
+        type="password"
+        placeholder="enter your password"
+        formControlName="password"
+      />
+      <div
+        class=""
+        *ngIf="
+          registerControls['password']['touched'] &&
+          registerControls['password']['invalid']
+        "
+      >
+        <p
+          *ngIf="
+            registerControls['password']['errors'] &&
+            registerControls['password']['errors']['required']
+          "
+          class="text-danger"
+        >
+          password is required
+        </p>
+        <p
+          *ngIf="
+            registerControls['password']['errors'] &&
+            registerControls['password']['errors']['minlength']
+          "
+          class="text-danger"
+        >
+          password is too short
+        </p>
+        <p
+          *ngIf="
+            registerControls['password']['errors'] &&
+            registerControls['password']['errors']['pattern']
+          "
+          class="text-danger"
+        >
+          password must have uppercase letter , lowercase letter and a number
+          and special character
+        </p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control mt-5 mb-5"
+        type="password"
+        placeholder="confirm your password"
+        formControlName="password"
+      />
+      <div
+        class=""
+        *ngIf="
+          registerControls['password']['touched'] &&
+          registerControls['password']['invalid']
+        "
+      >
+        <p
+          *ngIf="
+            registerControls['password']['errors'] &&
+            registerControls['password']['errors']['required']
+          "
+          class="text-danger"
+        >
+          password confirm is required
+        </p>
+        <p
+          *ngIf="
+            registerControls['password']['errors'] &&
+            registerControls['password']['errors']['pattern']
+          "
+          class="text-danger"
+        >
+          password must match previous field
+        </p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control mt-5 mb-5"
+        type="text"
+        placeholder="enter your username"
+        formControlName="username"
+      />
+      <div
+        *ngIf="
+          registerControls['username']['touched'] &&
+          registerControls['username']['invalid']
+        "
+      >
+        <p
+          *ngIf="
+            registerControls['username']['errors'] &&
+            registerControls['username']['errors']['requried']
+          "
+        >
+          username is required
+        </p>
+        <p
+          *ngIf="
+            registerControls['username']['errors'] &&
+            registerControls['username']['errors']['pattern']
+          "
+          class="text-danger"
+        >
+          username can't have spaces in between
+        </p>
+      </div>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary">Register</button>
+    </div>
+  </form>
+</div>

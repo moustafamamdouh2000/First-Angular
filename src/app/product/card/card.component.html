@@ -1,0 +1,13 @@
+<div class="d-flex flex-column justify-content-between" *ngIf="product">
+  <img [src]="product.image" [alt]="product.title" />
+  <div class="d-flex flex-column justify-content-end">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <h6 class="p-2">{{ product.category }}</h6>
+    <p>{{ product.description }}</p>
+    <h2 class="text-center">{{ product.price }}</h2>
+    <div>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+      <a class="btn btn-primary">View Details</a>
+    </div>
+  </div>
+</div>
