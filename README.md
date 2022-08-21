@@ -1,3 +1,4 @@
+This repo is made to practice some Angular concepts 
 # StarterProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
